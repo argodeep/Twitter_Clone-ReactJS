@@ -103,7 +103,7 @@ module.exports = {
         new WorkboxWebpackPlugin.GenerateSW({
             clientsClaim: true,
             skipWaiting: true,
-            exclude: [/\.html$/]
+            exclude: [/\.html$/, /\_redirects$/]
         }),
     ],
     optimization: {
