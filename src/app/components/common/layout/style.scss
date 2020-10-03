@@ -1,0 +1,160 @@
+// global styles
+@import "/src//app//style.scss";
+
+@media screen and (max-width: 1023px) {
+  .layout-main {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    z-index: 1;
+  }
+  .layout-main div .app-toolbar {
+    // margin-top: 12px;
+  }
+  .layout-main .right-bar {
+    display: none;
+  }
+  .layout-main div .app-toolbar .action SVG {
+    margin: 8px 20px 8px 8px !important;
+  }
+}
+// desktop
+@media screen and (min-width: 1024px) {
+  .layout-main {
+    height: 100vh;
+    display: grid;
+    margin-right: 40px;
+    grid-template-columns: 600px minmax(auto, 350px);
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .layout-main .right-bar {
+    height: 100vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding-left: 24px;
+  }
+
+  .layout-main .right-bar .search-autocomplete {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $secondary-background;
+    margin: 8px 0px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+  }
+
+  .layout-main .right-bar .search-autocomplete SVG {
+    height: 16px;
+    width: 16px;
+    margin-left: 15px;
+    margin-right: 8px;
+    // margin: 8px;
+  }
+  .layout-main .right-bar .search-autocomplete input {
+    padding: 0px 12px;
+    background-color: $secondary-background;
+    border: 0px;
+    cursor: text;
+    height: 34px;
+    width: 100%;
+    max-width: calc(100% - 92px);
+  }
+
+  .layout-main .right-bar .search-autocomplete:focus-within {
+    background-color: #fff !important;
+    border: 1px solid $theme-color !important;
+    // transition: 0.3s;
+  }
+
+  .layout-main .right-bar .search-autocomplete input:focus {
+    outline: none;
+    background-color: #fff;
+    // transition: 0.3s;
+  }
+
+  .layout-main .right-bar .search-autocomplete input::placeholder {
+    font-size: 14px;
+  }
+
+  .layout-main .right-bar .trending-card {
+    background-color: $secondary-background;
+    border-radius: 16px;
+    // height: calc(100vh - 100px);
+    height: fit-content;
+    padding: 8px 0px;
+    margin-bottom: 16px;
+  }
+
+  .layout-main .right-bar .trending-card h2 {
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 16px 8px;
+  }
+  .show-more {
+    color: $theme-color;
+    cursor: pointer;
+  }
+}
+
+.layout-main .content-area {
+  border-right: 1px solid $border-color;
+}
+
+.layout-main div .app-toolbar {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  border-bottom: 1px solid $border-color;
+  cursor: pointer;
+}
+
+.layout-main div .app-toolbar .action {
+  display: flex;
+  align-items: center;
+}
+
+.layout-main div .app-toolbar .action SVG {
+  height: 16px;
+  width: 16px;
+  margin: 8px 32px 8px 8px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.layout-main div .app-toolbar .action SVG:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.layout-main div .app-toolbar .action img {
+  margin: 8px 20px 8px 0px;
+}
+
+.layout-main div .app-toolbar .action h3 {
+  font-weight: 800 !important;
+  line-height: 1.3rem;
+  margin: 0px;
+  max-width: calc(100vw - 120px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.layout-main div .app-toolbar .content SVG {
+  height: 24px;
+  width: 24px;
+  // margin: 8px;
+}
+
+.layout-main div .content-scroll {
+  height: calc(100vh - 56px);
+  overflow: auto;
+  scroll-behavior: smooth;
+}

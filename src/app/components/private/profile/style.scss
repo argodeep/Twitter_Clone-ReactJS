@@ -1,0 +1,205 @@
+// global styles
+@import "/src//app//style.scss";
+
+@media screen and (max-width: 499px) {
+  div.cover {
+    height: 100px;
+    width: 100%;
+    background-color: $theme-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .profile-area .avatar-profile {
+    height: 68px;
+    width: 68px;
+    background-color: $theme-color;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-left: 15px;
+    border: 6px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  div.cover {
+    height: 200px;
+    width: 100%;
+    background-color: $theme-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .profile-area {
+    margin-bottom: 15px;
+  }
+
+  .profile-area .avatar-profile {
+    height: 134px;
+    width: 134px;
+    background-color: $theme-color;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: 15px;
+    border: 6px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.profile-area .unfollow {
+  height: 36px;
+  min-height: 36px;
+  padding: 0px 12px;
+  background-color: $theme-color;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0px;
+  border-radius: 9999px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+  outline: none;
+  float: right;
+  margin-top: -45px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.profile-area .unfollow:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.profile-area .unfollow:hover {
+  background-color: $theme-color-hover;
+}
+
+.profile-area .follow {
+  height: 36px;
+  min-height: 36px;
+  padding: 0px 12px;
+  background-color: #fff;
+  color: $theme-color;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid $theme-color;
+  border-radius: 9999px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+  outline: none;
+  float: right;
+  margin-top: -45px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.profile-area .follow:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.profile-area .follow:hover {
+  background-color: $secondary-background;
+}
+
+.profile-area .profile-column {
+  margin-left: 0px !important;
+}
+
+.profile-area .profile:hover {
+  background-color: inherit !important;
+}
+.profile-area .profile-column .name {
+  max-width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+}
+
+.profile-area .profile {
+  margin-bottom: 0px;
+}
+
+.profile-area .bio {
+  padding: 0px 12px;
+  margin: 0px;
+  font-size: 15px;
+  color: $post-text;
+}
+
+.profile-area .profile-info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profile-area .profile-info span {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+.profile-area .profile-info .actions {
+  min-width: 120px;
+}
+
+.profile-area .profile-info SVG {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 8px;
+}
+
+.profile-area .profile-info SVG:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+  border-radius: 9999px;
+}
+
+.profile-area .profile-info .value {
+  color: $secondary-action-color;
+  font-size: 14px;
+}
+
+.profile-area .profile-stats {
+  display: flex;
+  justify-content: flex-start;
+  padding: 4px 12px;
+}
+
+.profile-area .profile-stats .value {
+  font-weight: 700;
+}
+
+.profile-area .profile-stats .unit {
+  color: $secondary-action-color;
+  margin-left: 4px;
+  margin-right: 12px;
+}
+
+.profile-area .profile-tabs {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  height: 36px;
+  padding: 4px 12px;
+  margin-top: 12px;
+  border-bottom: 1px solid $border-color;
+}
+
+.profile-area .profile-tabs span {
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $secondary-action-color;
+  cursor: pointer;
+}
+
+.profile-area .profile-tabs .active {
+  color: $theme-color !important;
+  border-bottom: 3px solid $theme-color;
+  margin-bottom: -5px;
+
+}

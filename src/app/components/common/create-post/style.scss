@@ -1,0 +1,74 @@
+// global styles
+@import "/src//app//style.scss";
+
+.create-post-wrapper {
+  display: grid;
+  grid-template-columns: 50px auto;
+  height: fit-content;
+  padding: 8px 15px;
+  border-bottom: 1px solid $border-color;
+  cursor: pointer;
+}
+
+.create-post-wrapper .avatar {
+  margin: 0px auto;
+}
+
+.create-post-wrapper div {
+  margin-left: 8px;
+  max-width: calc(100vw - 50px - 30px - 8px);
+}
+
+.create-post-wrapper div textarea {
+  margin: 0px;
+  width: 100%;
+  resize: none;
+  border: 0px;
+  font-size: 1.2rem;
+}
+
+.create-post-wrapper div textarea::placeholder {
+  //  padding-left: 12px;
+  font-size: 1.2rem;
+}
+
+.create-post-wrapper div textarea:focus {
+  outline: none;
+}
+
+.create-post-wrapper .post-action {
+   display: flex;
+   justify-content: space-between;
+}
+
+.create-post-wrapper .post-action .info-message {
+  color: $theme-color;
+}
+
+.create-post-wrapper .post-action .error-message {
+  color: red;
+}
+
+.create-post-wrapper .add-tweet {
+  height: 36px;
+  min-height: 36px;
+  padding: 0px 12px;
+  background-color: $theme-color;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 0px;
+  border-radius: 9999px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+  outline: none;
+  cursor: pointer;
+}
+
+.create-post-wrapper .add-tweet:disabled {
+   opacity: 0.5;
+   pointer-events: none;
+}
+
+.create-post-wrapper .add-tweet:hover {
+  background-color: $theme-color-hover;
+}
