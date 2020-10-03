@@ -10,7 +10,7 @@ module.exports = {
     output: {
         filename: 'static/js/[id].[hash].js',
         path: path.join(__dirname, '/docs'),
-        publicPath: '/'
+        publicPath: 'https://argodeep.github.io/Twitter-Clone/'
     },
     module: {
         rules: [
@@ -75,8 +75,8 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./public/index.html",
             filename: "./index.html",
-            publicPath: '/',
-            base: '/'
+            publicPath: 'https://argodeep.github.io/Twitter-Clone/',
+            base: 'https://argodeep.github.io/Twitter-Clone/'
         }),
         new CopyWebPackPlugin({
             patterns: [
