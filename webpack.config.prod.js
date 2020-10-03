@@ -85,7 +85,11 @@ module.exports = {
                     to: '',
                     globOptions: {
                         ignore: ['*.html']
-                    }
+                    },
+                },
+                {
+                    from: './_redirects',
+                    to: '',
                 }
             ],
         }),
