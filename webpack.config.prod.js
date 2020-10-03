@@ -9,8 +9,8 @@ module.exports = {
     entry: path.join(__dirname, '/src/index.js'),
     output: {
         filename: 'static/js/[id].[hash].js',
-        path: path.join(__dirname, '/docs'),
-        publicPath: 'https://argodeep.github.io/Twitter-Clone/'
+        path: path.join(__dirname, '/build'),
+        publicPath: 'https://tca.vercel.app/'
     },
     module: {
         rules: [
@@ -75,8 +75,8 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./public/index.html",
             filename: "./index.html",
-            publicPath: 'https://argodeep.github.io/Twitter-Clone/',
-            base: 'https://argodeep.github.io/Twitter-Clone/'
+            publicPath: 'https://tca.vercel.app//',
+            base: 'https://tca.vercel.app//'
         }),
         new CopyWebPackPlugin({
             patterns: [
