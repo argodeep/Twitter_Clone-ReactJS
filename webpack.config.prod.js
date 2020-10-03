@@ -10,7 +10,7 @@ module.exports = {
     output: {
         filename: 'static/js/[id].[hash].js',
         path: path.join(__dirname, '/build'),
-        publicPath: 'https://tca.vercel.app/'
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -75,8 +75,8 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./public/index.html",
             filename: "./index.html",
-            publicPath: 'https://tca.vercel.app//',
-            base: 'https://tca.vercel.app//'
+            publicPath: '/',
+            base: '/'
         }),
         new CopyWebPackPlugin({
             patterns: [
