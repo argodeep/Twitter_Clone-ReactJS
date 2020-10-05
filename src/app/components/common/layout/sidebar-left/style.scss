@@ -58,7 +58,7 @@
     display: none;
   }
 
-  .layout-header .add-tweet-icon SVG {
+  .layout-header .add-tweet-icon svg {
     display: none;
   }
 
@@ -105,7 +105,7 @@
     transition: 0.3s;
   }
 
-  .layout-header .add-tweet-icon SVG {
+  .layout-header .add-tweet-icon svg {
     height: 24px;
     width: 24px;
     margin: auto;
@@ -127,7 +127,7 @@
     display: none;
   }
 
-  .layout-header .profile SVG {
+  .layout-header .profile svg {
     display: none;
   }
 }
@@ -170,7 +170,7 @@
     transition: 0.3s;
   }
 
-  .layout-header .add-tweet-icon SVG {
+  .layout-header .add-tweet-icon svg {
     height: 24px;
     width: 24px;
     margin: auto;
@@ -192,7 +192,7 @@
     display: none;
   }
 
-  .layout-header .profile SVG {
+  .layout-header .profile svg {
     display: none;
   }
 }
@@ -302,7 +302,7 @@
   color: $theme-color;
 }
 
-.layout-header ul.menu li SVG {
+.layout-header ul.menu li svg {
   height: 24px;
   width: 24px;
   margin: 8px;

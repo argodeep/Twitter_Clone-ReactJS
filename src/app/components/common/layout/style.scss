@@ -16,7 +16,7 @@
   .layout-main .right-bar {
     display: none;
   }
-  .layout-main div .app-toolbar .action SVG {
+  .layout-main div .app-toolbar .action svg {
     margin: 8px 20px 8px 8px !important;
   }
 }
@@ -49,7 +49,7 @@
     border: 1px solid transparent;
   }
 
-  .layout-main .right-bar .search-autocomplete SVG {
+  .layout-main .right-bar .search-autocomplete svg {
     height: 16px;
     width: 16px;
     margin-left: 15px;
@@ -121,7 +121,7 @@
   align-items: center;
 }
 
-.layout-main div .app-toolbar .action SVG {
+.layout-main div .app-toolbar .action svg {
   height: 16px;
   width: 16px;
   margin: 8px 32px 8px 8px;
@@ -129,7 +129,7 @@
   border-radius: 50%;
 }
 
-.layout-main div .app-toolbar .action SVG:hover {
+.layout-main div .app-toolbar .action svg:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
@@ -147,7 +147,7 @@
   overflow: hidden;
 }
 
-.layout-main div .app-toolbar .content SVG {
+.layout-main div .app-toolbar .content svg {
   height: 24px;
   width: 24px;
   // margin: 8px;
